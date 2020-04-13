@@ -105,7 +105,7 @@ module.exports = {
         // },
         blog: {
           path: './blog',
-          routeBasePath: '/',
+          routeBasePath: '/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
