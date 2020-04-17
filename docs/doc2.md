@@ -1,6 +1,6 @@
 ---
 id: doc2
-title: Document Number 2
+title: 文档内跳转示例
 ---
 
-This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.example.com)
+This is a link to [mdxDetail.](mdx.md) This is a link to an [external page.](http://www.example.com)

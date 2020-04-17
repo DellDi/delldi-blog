@@ -8,31 +8,31 @@
  */
 
 module.exports = {
-  title: 'My Site',
+  title: 'website of delldi',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'delldi', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Facebook Project',
+      title: 'Home',
       logo: {
-        alt: 'My Facebook Project Logo',
-        src: 'img/logo.svg',
+        alt: 'Dripping Stone',
+        src: 'img/shut.svg',
       },
       links: [
-        // {
-        //   to: 'docs/doc1',
-        //   activeBasePath: 'docs',
-        //   label: 'Docs',
-        //   position: 'left',
-        // },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/doc1',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'right',
+        },
+        {to: 'blog', label: 'Blog', position: 'right'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/delldi',
           label: 'GitHub',
           position: 'right',
         },
@@ -45,7 +45,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'markdown',
               to: 'docs/doc1',
             },
             {
@@ -76,33 +76,29 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              href: 'https://github.com/delldi',
+            }
           ],
         },
       ],
       logo: {
-        alt: 'Facebook Open Source Logo',
+        alt: 'docusaurus link',
         src: 'img/oss_logo.png',
-        href: 'https://opensource.facebook.com/',
+        href: 'https://docusaurus.io/',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} delldi, thanks the Docusaurus`,
     },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/edit/master/website/',
-        // },
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/',
+        },
         blog: {
           path: './blog',
           routeBasePath: '/blog',

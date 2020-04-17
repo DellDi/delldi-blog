@@ -1,3 +1,10 @@
+/*
+ * @Author: Dell_Di
+ * @Date: 2020-04-16 15:29:06
+ * @LastEditors: Dell_Di
+ * @LastEditTime: 2020-04-17 13:40:51
+ * @FilePath: \delldi-blog\sidebars.js
+ */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -9,7 +16,7 @@
 
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    'use': ['doc1','doc2'],
+    'feature': ['mdx']
   },
 };

@@ -1,14 +1,14 @@
 ---
 id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+title: markdown语法
+sidebar_label: markdown语法
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
 ## Markdown Syntax
 
-To serve as an example page when styling markdown based Docusaurus sites.
+markdown based Docusaurus sites.
 
 ## Headers
 
