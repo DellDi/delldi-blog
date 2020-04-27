@@ -1,7 +1,7 @@
 /*
- * @Author: Dell_Di
+ * @Author: delldi
  * @Date: 2020-04-16 15:29:06
- * @LastEditors: Dell_Di
+ * @LastEditors: delldi
  * @LastEditTime: 2020-04-17 13:40:51
  * @FilePath: \delldi-blog\sidebars.js
  */

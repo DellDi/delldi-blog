@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  title: 'website of delldi',
+  title: 'delldi',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -17,10 +17,10 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Home',
+      title: 'dell_di',
       logo: {
-        alt: 'Dripping Stone',
-        src: 'img/shut.svg',
+        alt: '我的头像',
+        src: 'https://avatars3.githubusercontent.com/u/40460351?s=60&u=ba9637be7363625f2322319ab99fe8508e4bce87&v=4',
       },
       links: [
         {
@@ -29,7 +29,7 @@ module.exports = {
           label: 'Docs',
           position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'right'},
+        {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/delldi',
