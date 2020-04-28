@@ -1,0 +1,392 @@
+/* *,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+:root {
+  --primary-color: #e53935;
+  --shadow-color: #0e0e0e;
+  --clock-my-color: #212121;
+  /*Animations Time*/
+  --s-animation-time: 10s;
+  --m-animation-time: 60s;
+  --h-animation-time: 20s;
+  /*Real Time in Seconds*/
+  --s-rotate-time: 60s;
+  --m-rotate-time: 3600s;
+  --h-rotate-time: 43200s;
+  /*Rotate From*/
+  --s-rotate-from: 0deg;
+  --m-rotate-from: 0deg;
+  --h-rotate-from: 0deg;
+  /*Rotate To*/
+  --s-rotate-to: 0deg;
+  --m-rotate-to: 0deg;
+  --h-rotate-to: 0deg;
+}
+
+/* html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+} */
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* body {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-shadow: 0 0 0.1rem var(--clock-my-color);
+} */
+
+/* section {
+  background-color: var(--clock-my-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10rem;
+} */
+
+/* section.animation:before,
+section.working:before {
+  font-size: 2rem;
+  color: var(--primary-color);
+  position: absolute;
+} */
+
+/* section.animation:before {
+  content: 'Real time \2193';
+  bottom: 1.5rem;
+} */
+
+/* section.working:before {
+  content: 'Animated \2191';
+  top: 1.5rem;
+} */
+
+.clock,
+.clock-top,
+.clock-center,
+.hours-pointer {
+  border-radius: 50%;
+}
+
+.clock {
+  height: 35rem;
+  width: 35rem;
+  min-height: 35rem;
+  min-width: 35rem;
+  padding: 1rem;
+  background-color: var(--clock-my-color);
+  box-shadow: 0 0 1rem var(--shadow-color);
+  -webkit-box-shadow: 0 0 1rem var(--shadow-color);
+  -moz-box-shadow: 0 0 1rem var(--shadow-color);
+  position: relative;
+}
+
+.clock-center {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 0.4rem 0 0.8rem 0 var(--shadow-color);
+  -webkit-box-shadow: 0.4rem 0 0.8rem 0 var(--shadow-color);
+  -moz-box-shadow: 0.4rem 0 0.8rem 0 var(--shadow-color);
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    '. . . n12 . . .'
+    '. . n11  . n1 . .'
+    '. n10 . . . n2 .'
+    'n9 . . . . . n3'
+    '. n8 . . . n4 .'
+    '. . n7 . n5 . .'
+    '. . . n6 . . .';
+}
+
+.number {
+  font-size: 3.2rem;
+  color: var(--clock-my-color);
+  line-height: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.number-1 {
+  grid-area: n1;
+  justify-self: end;
+  align-self: start;
+}
+.number-2 {
+  grid-area: n2;
+  justify-self: end;
+  align-self: start;
+}
+.number-3 {
+  grid-area: n3;
+  justify-self: start;
+}
+.number-4 {
+  grid-area: n4;
+  justify-self: end;
+  align-self: end;
+}
+.number-5 {
+  grid-area: n5;
+  justify-self: end;
+  align-self: end;
+}
+.number-6 {
+  grid-area: n6;
+  align-self: start;
+}
+.number-7 {
+  grid-area: n7;
+  justify-self: start;
+  align-self: end;
+}
+.number-8 {
+  grid-area: n8;
+  justify-self: start;
+  align-self: end;
+}
+.number-9 {
+  grid-area: n9;
+  justify-self: end;
+}
+.number-10 {
+  grid-area: n10;
+  justify-self: start;
+  align-self: start;
+}
+.number-11 {
+  grid-area: n11;
+  justify-self: start;
+  align-self: start;
+}
+.number-12 {
+  grid-area: n12;
+  align-self: end;
+}
+
+.clock-top,
+.hours-container,
+.hours-pointer {
+  height: 100%;
+  width: 100%;
+}
+
+.clock-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hours-container {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0.1rem 0 0.6rem var(--shadow-color));
+  -webkit-filter: drop-shadow(0.1rem 0 0.6rem var(--shadow-color));
+}
+
+.hours-pointer {
+  background-color: var(--clock-my-color);
+  clip-path: polygon(
+    -10% -10%,
+    32% -10%,
+    50% 50%,
+    68% -10%,
+    110% -10%,
+    110% 110%,
+    -10% 110%
+  );
+  -webkit-clip-path: polygon(
+    -10% -10%,
+    32% -10%,
+    50% 50%,
+    68% -10%,
+    110% -10%,
+    110% 110%,
+    -10% 110%
+  );
+}
+
+.sec-min-container {
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--clock-my-color);
+  /* box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color);
+  -webkit-box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color);
+  -moz-box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color); */
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.sec-container,
+.min-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-pointer {
+  position: absolute;
+  bottom: -4rem;
+  height: 22rem;
+  width: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color);
+  -webkit-box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color);
+  -moz-box-shadow: 0 0.1rem 1rem 0.1rem var(--shadow-color);
+  z-index: 0;
+}
+
+.sec-container:before {
+  content: '';
+  position: absolute;
+  height: 0.4rem;
+  width: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--clock-my-color);
+  z-index: 2;
+}
+
+.sec-container:after {
+  content: '';
+  position: absolute;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.min-pointer {
+  position: absolute;
+  bottom: -1.5rem;
+  height: 14rem;
+  width: 0.2rem;
+  border-radius: 0.15rem;
+  background-color: #fff;
+  box-shadow: 0.4rem 0.1rem 0.8rem 0.1rem var(--shadow-color);
+  -webkit-box-shadow: 0.4rem 0.1rem 0.8rem 0.1rem var(--shadow-color);
+  -moz-box-shadow: 0.4rem 0.1rem 0.8rem 0.1rem var(--shadow-color);
+  z-index: 0;
+}
+
+/*
+-- Animation
+*/
+.animation .sec-container {
+  animation: animate-seconds var(--s-animation-time) infinite linear;
+  -o-animation: animate-seconds var(--s-animation-time) infinite linear;
+  -webkit-animation: animate-seconds var(--s-animation-time) infinite linear;
+}
+
+.animation .min-container {
+  animation: animate-pointers var(--m-animation-time) infinite linear;
+  -o-animation: animate-pointers var(--m-animation-time) infinite linear;
+  -webkit-animation: animate-pointers var(--m-animation-time) infinite linear;
+}
+
+.animation .hours-pointer {
+  animation: animate-pointers var(--h-animation-time) infinite linear;
+  -o-animation: animate-pointers var(--h-animation-time) infinite linear;
+  -webkit-animation: animate-pointers var(--h-animation-time) infinite linear;
+}
+
+@keyframes animate-seconds {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  90% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes animate-pointers {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*
+-- Working
+*/
+.working .sec-container {
+  transform: rotateZ(var(--s-rotate-from));
+  animation: rotate-seconds var(--s-rotate-time) infinite linear;
+  -o-animation: rotate-seconds var(--s-rotate-time) infinite linear;
+  -webkit-animation: rotate-seconds var(--s-rotate-time) infinite linear;
+}
+
+.working .min-container {
+  transform: rotateZ(var(--m-rotate-from));
+  animation: rotate-minutes var(--m-rotate-time) infinite linear;
+  -o-animation: rotate-minutes var(--m-rotate-time) infinite linear;
+  -webkit-animation: rotate-minutes var(--m-rotate-time) infinite linear;
+}
+
+.working .hours-pointer {
+  transform: rotateZ(var(--h-rotate-from));
+  animation: rotate-hours var(--h-rotate-time) infinite linear;
+  -o-animation: rotate-hours var(--h-rotate-time) infinite linear;
+  -webkit-animation: rotate-hours var(--h-rotate-time) infinite linear;
+}
+
+@keyframes rotate-seconds {
+  from {
+    transform: rotateZ(var(--s-rotate-from));
+  }
+  to {
+    transform: rotateZ(var(--s-rotate-to));
+  }
+}
+
+@keyframes rotate-minutes {
+  from {
+    transform: rotateZ(var(--m-rotate-from));
+  }
+  to {
+    transform: rotateZ(var(--m-rotate-to));
+  }
+}
+
+@keyframes rotate-hours {
+  from {
+    transform: rotateZ(var(--h-rotate-from));
+  }
+  to {
+    transform: rotateZ(var(--h-rotate-to));
+  }
+}

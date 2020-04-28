@@ -19,7 +19,7 @@ module.exports = {
     navbar: {
       title: 'dell_di',
       logo: {
-        alt: '我的头像',
+        alt: '',
         src: 'https://avatars3.githubusercontent.com/u/40460351?s=60&u=ba9637be7363625f2322319ab99fe8508e4bce87&v=4',
       },
       links: [
@@ -62,8 +62,8 @@ module.exports = {
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'codePen',
+              href: 'https://codepen.io/dell_di/pen',
             },
           ],
         },
