@@ -26,7 +26,7 @@ module.exports = {
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
-          label: 'React组件与随笔',
+          label: '组件与随笔',
           position: 'right',
         },
         {to: 'blog', label: '博客', position: 'left'},
