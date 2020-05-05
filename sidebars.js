@@ -16,7 +16,7 @@
 
 module.exports = {
   someSidebar: {
-    'use': ['doc1','doc2'],
-    'feature': ['mdx']
+    'markdown语法': ['doc1','doc2'],
+    'React小组件': ['mdx']
   },
 };

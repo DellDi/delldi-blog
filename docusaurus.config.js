@@ -12,7 +12,7 @@ module.exports = {
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/faviconCommunity.ico',
   organizationName: 'delldi', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -26,10 +26,10 @@ module.exports = {
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'React组件与随笔',
           position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: '博客', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/delldi',
@@ -45,12 +45,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'markdown',
+              label: '语法使用',
               to: 'docs/doc1',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: '组件渲染示例',
+              to: 'docs/mdx',
             },
           ],
         },
@@ -58,8 +58,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'linkedin',
+              href: 'https://www.linkedin.com/company/linkedin-china/',
             },
             {
               label: 'codePen',
@@ -71,7 +71,7 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'Blog',
+              label: '博客',
               to: 'blog',
             },
             {
