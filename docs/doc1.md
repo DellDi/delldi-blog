@@ -65,9 +65,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [I'm a reference-style link][arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
 
 Or leave it empty and use the [link text itself].
 
@@ -168,6 +165,26 @@ This line is separated from the one above by two newlines, so it will be a _sepa
 This line is also a separate paragraph, but... This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
 
 ---
+
+## Tree Files
+
+```
+    project
+│   file001.js    
+│
+└───folder1
+│   │   file011.vue
+│   │   file012.vue
+│   │
+│   └───subfolder1
+│       │   file111.jsx
+│       │   file112.jsx
+│       │   ...
+│   
+└───folder2
+    │   file021.js
+    │   file022.js
+```
 
 ## Admonitions
 

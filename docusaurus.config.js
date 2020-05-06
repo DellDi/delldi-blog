@@ -29,7 +29,7 @@ module.exports = {
           label: '组件与随笔',
           position: 'right',
         },
-        {to: 'blog', label: '博客', position: 'left'},
+        {to: 'blog', label: '博客', position: 'right'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/delldi',
@@ -101,7 +101,7 @@ module.exports = {
         },
         blog: {
           path: './blog',
-          routeBasePath: '/blog',
+          routeBasePath: '/blog'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

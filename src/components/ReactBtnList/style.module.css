@@ -1,0 +1,78 @@
+.button {
+  padding: 12px 48px;
+  border-radius: 24px;
+  border: none;
+  background-color: #0076ff;
+  box-shadow: 0px 4px 10px rgba(135, 167, 171, 0.5);
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
+  outline: none;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #ff4059;
+}
+
+.black {
+  background-color: #2e3434;
+}
+
+.secondary {
+  background: none;
+  border: 2px solid #0076ff;
+  color: white;
+}
+
+.secondary.red {
+  border-color: #ff4059;
+  color: #ff4059;
+}
+
+.secondary.black {
+  border-color: #2e3434;
+  color: #2e3434;
+}
+
+.btn-container {
+  position: relative;
+  /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  text-align: center;
+}
+.btn {
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  width: 220px;
+  font-family: 'montserrat', sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-size: 200%;
+  transition: all 0.6s linear;
+}
+
+.btn:active {
+  border: none;
+}
+
+.btn1 {
+  background-image: linear-gradient(to left, #ffc312, #ee5a24, #ffc312);
+}
+.btn2 {
+  background-image: linear-gradient(to left, #c4e538, #009432, #c4e538);
+}
+.btn3 {
+  background-image: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4);
+}
+.btn4 {
+  background-image: linear-gradient(to left, #fda7df, #9980fa, #fda7df);
+}
+.btn:hover {
+  background-position: right;
+}

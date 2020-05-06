@@ -2,7 +2,7 @@
  * @Author: delldi
  * @Date: 2020-04-16 15:29:06
  * @LastEditors: Dell_Di
- * @LastEditTime: 2020-05-06 09:59:23
+ * @LastEditTime: 2020-05-06 15:26:56
  * @FilePath: \delldi-blog\sidebars.js
  */
 /**
@@ -16,7 +16,7 @@
 
 module.exports = {
   someSidebar: {
-    'markdown语法': ['doc1','doc2'],
-    'React小组件': ['mdx']
+    'markdown语法': ['doc1', 'doc2'],
+    'React小组件': ['mdx', 'clock', 'btn'],
   },
 };

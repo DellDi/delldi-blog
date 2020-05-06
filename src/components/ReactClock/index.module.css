@@ -1,11 +1,3 @@
-/* *,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 :root {
   --primary-color: #e53935;
   --shadow-color: #0e0e0e;
@@ -28,11 +20,6 @@
   --h-rotate-to: 0deg;
 }
 
-/* html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-} */
-
 @media only screen and (max-width: 500px) {
   html {
     font-size: 7px;
@@ -45,41 +32,14 @@
   }
 }
 
-/* body {
-  background-color: var(--primary-color);
-  min-height: 100vh;
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-weight: 500;
-  font-size: 1.4rem;
-  text-shadow: 0 0 0.1rem var(--clock-my-color);
-} */
-
-/* section {
-  background-color: var(--clock-my-color);
-  min-height: 100vh;
+.working {
+  width: 100%;
+  height: 40rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 10rem;
-} */
-
-/* section.animation:before,
-section.working:before {
-  font-size: 2rem;
-  color: var(--primary-color);
-  position: absolute;
-} */
-
-/* section.animation:before {
-  content: 'Real time \2193';
-  bottom: 1.5rem;
-} */
-
-/* section.working:before {
-  content: 'Animated \2191';
-  top: 1.5rem;
-} */
+  align-items: center;
+  background: rgb(59, 63, 78);
+}
 
 .clock,
 .clock-top,

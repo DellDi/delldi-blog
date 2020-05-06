@@ -1,0 +1,14 @@
+:root {
+    --bg-gray: rgb(46, 28, 28);
+}
+
+.container {
+    width: 100%;
+    /* height: clamp(10vh 20rem 50vh); */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--bg-gray);
+    /* padding: clamp(1vh 1rem 20px) 0; */
+    padding: 2rem 0;
+}

@@ -1,10 +1,3 @@
-<!--
- * @Author: Dell_Di
- * @Date: 2020-04-16 15:29:06
- * @LastEditors: Dell_Di
- * @LastEditTime: 2020-05-06 09:59:58
- * @FilePath: \delldi-blog\docs\mdx.md
- -->
 ---
 id: mdx
 title: react语法演示
