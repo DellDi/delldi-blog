@@ -2,10 +2,10 @@
  * @Author: Dell_Di
  * @Date: 2020-04-28 13:42:32
  * @LastEditors: Dell_Di
- * @LastEditTime: 2020-04-28 15:48:49
- * @FilePath: \delldi-blog\src\pages\components\ReactClock\ReactClock.jsx
+ * @LastEditTime: 2020-04-30 13:36:32
+ * @FilePath: \delldi-blog\src\components\ReactClock\ReactClock.jsx
  */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import clockStyles from './index.module.css';
 import classnames from 'classnames'
 
@@ -69,6 +69,7 @@ function ClockList() {
 }
 
 export default function ReactClock() {
+    
     // const [state, setstate] = useState(initialState)
     // useEffect(() => {
     //     //Converted Time in Degrees

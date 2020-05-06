@@ -17,7 +17,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'dell_di',
+      title: 'zd迪',
       logo: {
         alt: '',
         src: 'https://avatars3.githubusercontent.com/u/40460351?s=60&u=ba9637be7363625f2322319ab99fe8508e4bce87&v=4',
@@ -26,10 +26,10 @@ module.exports = {
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'react组件',
           position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: '博客', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/delldi',
@@ -45,11 +45,11 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'markdown',
+              label: '语法记录',
               to: 'docs/doc1',
             },
             {
-              label: 'Second Doc',
+              label: 'React小组件',
               to: 'docs/doc2',
             },
           ],
@@ -57,10 +57,6 @@ module.exports = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
             {
               label: 'codePen',
               href: 'https://codepen.io/dell_di/pen',
@@ -71,7 +67,7 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'Blog',
+              label: '我的博客',
               to: 'blog',
             },
             {
