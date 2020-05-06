@@ -2,7 +2,7 @@
  * @Author: delldi
  * @Date: 2020-04-16 15:29:06
  * @LastEditors: Dell_Di
- * @LastEditTime: 2020-04-30 12:04:55
+ * @LastEditTime: 2020-05-06 09:59:23
  * @FilePath: \delldi-blog\sidebars.js
  */
 /**
@@ -16,7 +16,7 @@
 
 module.exports = {
   someSidebar: {
-    '使用说明': ['doc1','doc2'],
-    'React组件': ['mdx']
+    'markdown语法': ['doc1','doc2'],
+    'React小组件': ['mdx']
   },
 };

@@ -12,7 +12,7 @@ module.exports = {
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/faviconCommunity.ico',
   organizationName: 'delldi', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -26,7 +26,7 @@ module.exports = {
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
-          label: 'react组件',
+          label: '组件与随笔',
           position: 'right',
         },
         {to: 'blog', label: '博客', position: 'left'},
@@ -45,18 +45,22 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: '语法记录',
+              label: '语法使用',
               to: 'docs/doc1',
             },
             {
-              label: 'React小组件',
-              to: 'docs/doc2',
+              label: '组件渲染示例',
+              to: 'docs/mdx',
             },
           ],
         },
         {
           title: 'Community',
           items: [
+            {
+              label: 'linkedin',
+              href: 'https://www.linkedin.com/company/linkedin-china/',
+            },
             {
               label: 'codePen',
               href: 'https://codepen.io/dell_di/pen',
@@ -67,7 +71,7 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: '我的博客',
+              label: '博客',
               to: 'blog',
             },
             {
